@@ -120,10 +120,10 @@ CREATE TABLE IF NOT EXISTS study_materials (
 -- (Actual standard bcryptjs hash generated: $2a$10$n9L6nOqVq2L12Z.h8vJ2h.1O6iFq/p3J7t/vFmF3fS2l5D8o8qC7K)
 
 INSERT INTO users (id, name, email, password, role) VALUES
-(1, 'System Admin', 'admin@elp.com', '$2a$10$n9L6nOqVq2L12Z.h8vJ2h.1O6iFq/p3J7t/vFmF3fS2l5D8o8qC7K', 'admin'),
-(2, 'Professor Jane Smith', 'faculty@elp.com', '$2a$10$n9L6nOqVq2L12Z.h8vJ2h.1O6iFq/p3J7t/vFmF3fS2l5D8o8qC7K', 'faculty'),
-(3, 'John Doe', 'student@elp.com', '$2a$10$n9L6nOqVq2L12Z.h8vJ2h.1O6iFq/p3J7t/vFmF3fS2l5D8o8qC7K', 'student'),
-(4, 'Alice Green', 'alice@elp.com', '$2a$10$n9L6nOqVq2L12Z.h8vJ2h.1O6iFq/p3J7t/vFmF3fS2l5D8o8qC7K', 'student');
+(1, 'System Admin', 'admin@elp.com', '$2b$10$FRQL2I.UypnlzlcyIiRQQeeT.SjYYtAi0SE7wtpPW0uuM7Q1n0Tdi', 'admin'),
+(2, 'Professor Jane Smith', 'faculty@elp.com', '$2b$10$FRQL2I.UypnlzlcyIiRQQeeT.SjYYtAi0SE7wtpPW0uuM7Q1n0Tdi', 'faculty'),
+(3, 'John Doe', 'student@elp.com', '$2b$10$FRQL2I.UypnlzlcyIiRQQeeT.SjYYtAi0SE7wtpPW0uuM7Q1n0Tdi', 'student'),
+(4, 'Alice Green', 'alice@elp.com', '$2b$10$FRQL2I.UypnlzlcyIiRQQeeT.SjYYtAi0SE7wtpPW0uuM7Q1n0Tdi', 'student');
 
 INSERT INTO admins (id, user_id) VALUES (1, 1);
 INSERT INTO faculty (id, user_id, designation) VALUES (1, 2, 'Senior Professor');
